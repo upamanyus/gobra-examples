@@ -1,9 +1,9 @@
-// Causes gobra itself to crash
+// Causes gobra itself to crash; perhaps because of the implicit conversion?
 package main
 
 func main() {
 	m := make(map[any]bool)
-	k := make([]int, 0)
+	var k string
 	if m[k] {
 	}
 }
