@@ -1,13 +1,13 @@
 // Gobra verifies this, even though it's a buggy program that panics.
 package main
 
-type foo struct {
+type A struct {
 	a any
 }
 
 func main() {
-	m := make(map[foo]bool)
-	f := foo{a: []int(nil)}
-	if m[f] {
+	m := make(map[A]bool)
+	k := A{a: []int(nil)}
+	if m[k] {
 	}
 }
